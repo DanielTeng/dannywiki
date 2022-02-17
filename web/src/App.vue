@@ -2,20 +2,19 @@
   <a-layout>
     <TheHeader/>
     <router-view/>
-
-    <a-layout-footer style="text-align: center">
-      加瓦电子书
-    </a-layout-footer>
+    <TheFooter/>
   </a-layout>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import TheHeader from '@/components/TheHeader.vue';
+import TheFooter from "@/components/TheFooter.vue";
 
 export default defineComponent({
   name: 'APP',
   components: {
+    TheFooter,
     TheHeader,
   },
 });
